@@ -3,7 +3,7 @@
  */
 
 var customerColumnDefs = [
-    {headerName: 'Наименование организации', field: 'name', resizable: true,
+    {headerName: 'Наименование организации', field: 'name', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\w/i;
             var matchArr=params.value.toString().match(reg)||[];
@@ -13,8 +13,8 @@ var customerColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }},
-    {headerName: 'ИНН организации', field: 'inn', resizable: true,
+        }*/},
+    {headerName: 'ИНН организации', field: 'inn', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\d\d\d\d\d\d\d\d\d\d\d\d/;
             var matchArr=params.value.toString().match(reg)||[];
@@ -24,13 +24,13 @@ var customerColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }},
+        }*/},
     {headerName: 'Адрес организации', field: 'address', resizable: true}
 ];
 
 var accountColumnDefs = [
     {headerName: 'ИНН организации', field: 'inn', resizable: true, editable:false, filter:true},
-    {headerName: 'Счет', field: 'account', resizable: true,
+    {headerName: 'Счет', field: 'account', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d/;
             var matchArr=params.value.toString().match(reg)||[];
@@ -40,9 +40,9 @@ var accountColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }
+        }*/
     },
-    {headerName: 'Название счета', field: 'name', resizable: true,
+    {headerName: 'Название счета', field: 'name', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\w/i;
             var matchArr=params.value.toString().match(reg)||[];
@@ -52,8 +52,8 @@ var accountColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }},
-    {headerName: 'БИК банка', field: 'bank', resizable: true,
+        }*/},
+    {headerName: 'БИК банка', field: 'bank', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\d\d\d\d\d\d\d\d\d/;
             var matchArr=params.value.toString().match(reg)||[];
@@ -63,8 +63,8 @@ var accountColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }},
-    {headerName: 'Остаток на счете', field: 'balance', resizable: true,
+        }*/},
+    {headerName: 'Остаток на счете', field: 'balance', resizable: true/*,
         cellStyle: function(params) {
             var reg=/\.\d\d$/;
             var reg2=/\.\d\d$/;
@@ -75,7 +75,7 @@ var accountColumnDefs = [
             } else {
                 return {backgroundColor: 'white'};
             }
-        }}
+        }*/}
 ];
 
 var accountGridOptions = {
